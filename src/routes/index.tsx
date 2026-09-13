@@ -449,11 +449,12 @@ function Footer() {
   return (
     <footer className="border-t border-border bg-hero-bg py-10">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <a href="#" className="inline-flex items-center gap-2 text-xl font-bold text-foreground">
-          <span>🏠</span> Casa Ofertas
+        <a href="#" className="inline-flex items-center gap-3 text-xl font-bold text-foreground">
+          <img src={logoAsset.url} alt="Ofertas Lar Doce Lar" className="h-10 w-auto" />
+          <span>Ofertas Lar Doce Lar</span>
         </a>
         <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-hero-muted">
-          Casa Ofertas é um canal independente de divulgação de ofertas. Não somos afiliados oficiais do Mercado
+          Ofertas Lar Doce Lar é um canal independente de divulgação de ofertas. Não somos afiliados oficiais do Mercado
           Livre ou da Shopee. Os preços e produtos exibidos são meramente ilustrativos e podem ser alterados a
           qualquer momento.
         </p>
