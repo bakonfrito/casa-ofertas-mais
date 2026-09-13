@@ -97,14 +97,7 @@ function Hero() {
               CHEGA DE PAGAR CARO EM{" "}
               <span className="text-cta">ACESSÓRIOS PARA CASA!</span>
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-hero-muted sm:text-xl">
-              Entre na comunidade que descobre os melhores preços e cupons exclusivos de organizadores,
-              iluminação, utensílios de cozinha e decoração — tudo vendido nas lojas oficiais do{" "}
-              <strong className="text-foreground">Mercado Livre</strong> e{" "}
-              <strong className="text-foreground">Shopee</strong>.
-            </p>
-
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
+            <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
@@ -116,6 +109,13 @@ function Hero() {
               </a>
               <span className="text-sm text-hero-muted">É grátis. Saia quando quiser.</span>
             </div>
+
+            <p className="mt-6 text-base leading-relaxed text-hero-muted sm:text-lg">
+              Entre na comunidade que descobre os melhores preços e cupons exclusivos de organizadores,
+              iluminação, utensílios de cozinha e decoração — tudo vendido nas lojas oficiais do{" "}
+              <strong className="text-foreground">Mercado Livre</strong> e{" "}
+              <strong className="text-foreground">Shopee</strong>.
+            </p>
 
           </div>
 
