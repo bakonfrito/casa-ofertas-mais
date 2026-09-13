@@ -474,7 +474,7 @@ function FloatingWhatsApp() {
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Entrar no grupo do WhatsApp"
+      aria-label="Entrar no grupo do WhatsApp - Ofertas Lar Doce Lar"
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-cta text-cta-foreground shadow-lg transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       <MessageCircle className="h-7 w-7" />
