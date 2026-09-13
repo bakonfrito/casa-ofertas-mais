@@ -1,10 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, Users, ShieldCheck, LogOut, Store, CheckCircle2, Smartphone, Gift, ShoppingCart, Flame, ArrowRight, Star } from "lucide-react";
-
-import avatar1 from "@/assets/casa-ofertas/avatar-1.jpg";
-import avatar2 from "@/assets/casa-ofertas/avatar-2.jpg";
-import avatar3 from "@/assets/casa-ofertas/avatar-3.jpg";
-import avatar4 from "@/assets/casa-ofertas/avatar-4.jpg";
+import { MessageCircle, ShieldCheck, LogOut, Store, CheckCircle2, Smartphone, Gift, ShoppingCart, Flame, ArrowRight } from "lucide-react";
 
 import produtoOrganizadorGavetas from "@/assets/casa-ofertas/produto-organizador-gavetas.jpg";
 import produtoLuminariaLed from "@/assets/casa-ofertas/produto-luminaria-led.jpg";
@@ -16,7 +11,6 @@ import produtoOrganizadorCloset from "@/assets/casa-ofertas/produto-organizador-
 import produtoUtensiliosCozinha from "@/assets/casa-ofertas/produto-utensilios-cozinha.jpg";
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/BB8fzz59ZKXIOvvy2tIQog?s=cl&p=a&mlu=4&ilr=4";
-const MEMBERS_COUNT = "+12 mil";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,7 +40,6 @@ function LandingPage() {
       <Header />
       <main>
         <Hero />
-        <SocialProof />
         <TrustBadges />
         <StoreBadges />
         <FeaturedOffers />
@@ -124,25 +117,6 @@ function Hero() {
               <span className="text-sm text-hero-muted">É grátis. Saia quando quiser.</span>
             </div>
 
-            <div className="mt-10 flex items-center justify-center gap-4 lg:justify-start">
-              <div className="flex -space-x-3">
-                {[avatar1, avatar2, avatar3, avatar4].map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt={`Membro ${i + 1}`}
-                    width={48}
-                    height={48}
-                    className="h-12 w-12 rounded-full border-2 border-hero-bg object-cover"
-                    loading="lazy"
-                  />
-                ))}
-              </div>
-              <div className="text-left">
-                <p className="text-sm font-semibold text-foreground">{MEMBERS_COUNT} pessoas</p>
-                <p className="text-xs text-hero-muted">já economizam com a gente</p>
-              </div>
-            </div>
           </div>
 
           <div className="relative hidden lg:block">
@@ -217,28 +191,6 @@ function OfferCardCompact({
   );
 }
 
-function SocialProof() {
-  return (
-    <section className="border-y border-border bg-hero-surface py-6">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 px-4 text-center sm:flex-row sm:gap-6 sm:px-6 lg:px-8">
-        <Users className="h-6 w-6 text-cta" />
-        <p className="text-lg font-semibold text-foreground">
-          {MEMBERS_COUNT} pessoas já economizam com a gente
-        </p>
-        <div className="hidden sm:block">
-          <div className="flex items-center gap-1 rounded-full bg-background px-3 py-1 text-sm font-medium text-foreground">
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <span className="ml-1">Comunidade ativa</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function TrustBadges() {
   const badges = [
