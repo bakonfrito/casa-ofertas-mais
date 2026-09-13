@@ -129,6 +129,7 @@ function Hero() {
                   price="R$ 89,90"
                   oldPrice="R$ 159,90"
                   discount="-44%"
+                  link={PRODUCT_LINK}
                 />
                 <OfferCardCompact
                   image={produtoPotesHermeticos}
@@ -136,6 +137,7 @@ function Hero() {
                   price="R$ 49,90"
                   oldPrice="R$ 99,90"
                   discount="-50%"
+                  link={PRODUCT_LINK}
                 />
                 <OfferCardCompact
                   image={produtoFitaLedRgb}
@@ -143,6 +145,7 @@ function Hero() {
                   price="R$ 29,90"
                   oldPrice="R$ 69,90"
                   discount="-57%"
+                  link={PRODUCT_LINK}
                 />
                 <OfferCardCompact
                   image={produtoUtensiliosCozinha}
@@ -150,6 +153,7 @@ function Hero() {
                   price="R$ 39,90"
                   oldPrice="R$ 79,90"
                   discount="-50%"
+                  link={PRODUCT_LINK}
                 />
               </div>
             </div>
