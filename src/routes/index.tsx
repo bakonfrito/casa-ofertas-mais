@@ -462,7 +462,7 @@ function Footer() {
           <CheckCircle2 className="h-4 w-4 text-success" />
           Conteúdo 100% editável pelo administrador
         </div>
-        <p className="mt-8 text-xs text-hero-muted">© {new Date().getFullYear()} Casa Ofertas. Todos os direitos reservados.</p>
+        <p className="mt-8 text-xs text-hero-muted">© {new Date().getFullYear()} Ofertas Lar Doce Lar. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
