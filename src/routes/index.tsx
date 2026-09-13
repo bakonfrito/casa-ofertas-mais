@@ -124,25 +124,6 @@ function Hero() {
               <span className="text-sm text-hero-muted">É grátis. Saia quando quiser.</span>
             </div>
 
-            <div className="mt-10 flex items-center justify-center gap-4 lg:justify-start">
-              <div className="flex -space-x-3">
-                {[avatar1, avatar2, avatar3, avatar4].map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt={`Membro ${i + 1}`}
-                    width={48}
-                    height={48}
-                    className="h-12 w-12 rounded-full border-2 border-hero-bg object-cover"
-                    loading="lazy"
-                  />
-                ))}
-              </div>
-              <div className="text-left">
-                <p className="text-sm font-semibold text-foreground">{MEMBERS_COUNT} pessoas</p>
-                <p className="text-xs text-hero-muted">já economizam com a gente</p>
-              </div>
-            </div>
           </div>
 
           <div className="relative hidden lg:block">
@@ -217,28 +198,6 @@ function OfferCardCompact({
   );
 }
 
-function SocialProof() {
-  return (
-    <section className="border-y border-border bg-hero-surface py-6">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 px-4 text-center sm:flex-row sm:gap-6 sm:px-6 lg:px-8">
-        <Users className="h-6 w-6 text-cta" />
-        <p className="text-lg font-semibold text-foreground">
-          {MEMBERS_COUNT} pessoas já economizam com a gente
-        </p>
-        <div className="hidden sm:block">
-          <div className="flex items-center gap-1 rounded-full bg-background px-3 py-1 text-sm font-medium text-foreground">
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <Star className="h-4 w-4 fill-warning text-warning" />
-            <span className="ml-1">Comunidade ativa</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function TrustBadges() {
   const badges = [
