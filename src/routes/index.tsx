@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShieldCheck, LogOut, Store, CheckCircle2, Smartphone, Gift, ShoppingCart, Flame, ArrowRight } from "lucide-react";
 
+import logoAsset from "@/assets/logo-ofertas-lar-doce-lar.png.asset.json";
+
 import produtoOrganizadorGavetas from "@/assets/casa-ofertas/produto-organizador-gavetas.jpg";
 import produtoLuminariaLed from "@/assets/casa-ofertas/produto-luminaria-led.jpg";
 import produtoPotesHermeticos from "@/assets/casa-ofertas/produto-potes-hermeticos.jpg";
@@ -16,13 +18,13 @@ const PRODUCT_LINK = "https://meli.la/1d2LDEy";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Casa Ofertas | Ofertas e Cupons de Acessórios para Casa" },
+      { title: "Ofertas Lar Doce Lar | Ofertas e Cupons de Acessórios para Casa" },
       {
         name: "description",
         content:
-          "Entre no grupo Casa Ofertas e receba os melhores preços e cupons exclusivos de acessórios para casa no Mercado Livre e Shopee. 100% gratuito.",
+          "Entre no grupo Ofertas Lar Doce Lar e receba os melhores preços e cupons exclusivos de acessórios para casa no Mercado Livre e Shopee. 100% gratuito.",
       },
-      { property: "og:title", content: "Casa Ofertas | Ofertas e Cupons de Acessórios para Casa" },
+      { property: "og:title", content: "Ofertas Lar Doce Lar | Ofertas e Cupons de Acessórios para Casa" },
       {
         property: "og:description",
         content:
@@ -56,10 +58,10 @@ function LandingPage() {
 function Header() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight text-foreground">
-          <span className="text-2xl">🏠</span>
-          <span>Casa Ofertas</span>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="#" className="flex items-center gap-3 text-xl font-bold tracking-tight text-foreground">
+          <img src={logoAsset.url} alt="Ofertas Lar Doce Lar" className="h-10 w-auto" />
+          <span>Ofertas Lar Doce Lar</span>
         </a>
         <a
           href={WHATSAPP_LINK}
@@ -103,7 +105,7 @@ function Hero() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-cta glow-cta inline-flex items-center gap-2 rounded-full px-8 py-4 text-lg font-bold text-cta-foreground transition-all hover:scale-[1.03] hover:bg-cta-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="gradient-cta blink-cta inline-flex items-center gap-2 rounded-full px-8 py-4 text-lg font-bold text-cta-foreground transition-all hover:scale-[1.03] hover:bg-cta-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <Flame className="h-5 w-5" />
                 ENTRAR NA COMUNIDADE
@@ -447,11 +449,12 @@ function Footer() {
   return (
     <footer className="border-t border-border bg-hero-bg py-10">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <a href="#" className="inline-flex items-center gap-2 text-xl font-bold text-foreground">
-          <span>🏠</span> Casa Ofertas
+        <a href="#" className="inline-flex items-center gap-3 text-xl font-bold text-foreground">
+          <img src={logoAsset.url} alt="Ofertas Lar Doce Lar" className="h-10 w-auto" />
+          <span>Ofertas Lar Doce Lar</span>
         </a>
         <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-hero-muted">
-          Casa Ofertas é um canal independente de divulgação de ofertas. Não somos afiliados oficiais do Mercado
+          Ofertas Lar Doce Lar é um canal independente de divulgação de ofertas. Não somos afiliados oficiais do Mercado
           Livre ou da Shopee. Os preços e produtos exibidos são meramente ilustrativos e podem ser alterados a
           qualquer momento.
         </p>
@@ -459,7 +462,7 @@ function Footer() {
           <CheckCircle2 className="h-4 w-4 text-success" />
           Conteúdo 100% editável pelo administrador
         </div>
-        <p className="mt-8 text-xs text-hero-muted">© {new Date().getFullYear()} Casa Ofertas. Todos os direitos reservados.</p>
+        <p className="mt-8 text-xs text-hero-muted">© {new Date().getFullYear()} Ofertas Lar Doce Lar. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
@@ -471,7 +474,7 @@ function FloatingWhatsApp() {
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Entrar no grupo do WhatsApp"
+      aria-label="Entrar no grupo do WhatsApp - Ofertas Lar Doce Lar"
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-cta text-cta-foreground shadow-lg transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       <MessageCircle className="h-7 w-7" />
