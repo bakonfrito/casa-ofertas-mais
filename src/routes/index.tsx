@@ -105,7 +105,7 @@ function Hero() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-cta glow-cta inline-flex items-center gap-2 rounded-full px-8 py-4 text-lg font-bold text-cta-foreground transition-all hover:scale-[1.03] hover:bg-cta-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="gradient-cta blink-cta inline-flex items-center gap-2 rounded-full px-8 py-4 text-lg font-bold text-cta-foreground transition-all hover:scale-[1.03] hover:bg-cta-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <Flame className="h-5 w-5" />
                 ENTRAR NA COMUNIDADE
