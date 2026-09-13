@@ -1,10 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, Users, ShieldCheck, LogOut, Store, CheckCircle2, Smartphone, Gift, ShoppingCart, Flame, ArrowRight, Star } from "lucide-react";
-
-import avatar1 from "@/assets/casa-ofertas/avatar-1.jpg";
-import avatar2 from "@/assets/casa-ofertas/avatar-2.jpg";
-import avatar3 from "@/assets/casa-ofertas/avatar-3.jpg";
-import avatar4 from "@/assets/casa-ofertas/avatar-4.jpg";
+import { MessageCircle, ShieldCheck, LogOut, Store, CheckCircle2, Smartphone, Gift, ShoppingCart, Flame, ArrowRight } from "lucide-react";
 
 import produtoOrganizadorGavetas from "@/assets/casa-ofertas/produto-organizador-gavetas.jpg";
 import produtoLuminariaLed from "@/assets/casa-ofertas/produto-luminaria-led.jpg";
@@ -16,7 +11,6 @@ import produtoOrganizadorCloset from "@/assets/casa-ofertas/produto-organizador-
 import produtoUtensiliosCozinha from "@/assets/casa-ofertas/produto-utensilios-cozinha.jpg";
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/BB8fzz59ZKXIOvvy2tIQog?s=cl&p=a&mlu=4&ilr=4";
-const MEMBERS_COUNT = "+12 mil";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,7 +40,6 @@ function LandingPage() {
       <Header />
       <main>
         <Hero />
-        <SocialProof />
         <TrustBadges />
         <StoreBadges />
         <FeaturedOffers />
