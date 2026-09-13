@@ -58,10 +58,10 @@ function LandingPage() {
 function Header() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight text-foreground">
-          <span className="text-2xl">🏠</span>
-          <span>Casa Ofertas</span>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="#" className="flex items-center gap-3 text-xl font-bold tracking-tight text-foreground">
+          <img src={logoAsset.url} alt="Ofertas Lar Doce Lar" className="h-10 w-auto" />
+          <span>Ofertas Lar Doce Lar</span>
         </a>
         <a
           href={WHATSAPP_LINK}
