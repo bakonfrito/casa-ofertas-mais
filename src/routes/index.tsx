@@ -11,6 +11,7 @@ import produtoOrganizadorCloset from "@/assets/casa-ofertas/produto-organizador-
 import produtoUtensiliosCozinha from "@/assets/casa-ofertas/produto-utensilios-cozinha.jpg";
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/BB8fzz59ZKXIOvvy2tIQog?s=cl&p=a&mlu=4&ilr=4";
+const PRODUCT_LINK = "https://meli.la/1d2LDEy";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -128,6 +129,7 @@ function Hero() {
                   price="R$ 89,90"
                   oldPrice="R$ 159,90"
                   discount="-44%"
+                  link={PRODUCT_LINK}
                 />
                 <OfferCardCompact
                   image={produtoPotesHermeticos}
@@ -135,6 +137,7 @@ function Hero() {
                   price="R$ 49,90"
                   oldPrice="R$ 99,90"
                   discount="-50%"
+                  link={PRODUCT_LINK}
                 />
                 <OfferCardCompact
                   image={produtoFitaLedRgb}
@@ -142,6 +145,7 @@ function Hero() {
                   price="R$ 29,90"
                   oldPrice="R$ 69,90"
                   discount="-57%"
+                  link={PRODUCT_LINK}
                 />
                 <OfferCardCompact
                   image={produtoUtensiliosCozinha}
@@ -149,6 +153,7 @@ function Hero() {
                   price="R$ 39,90"
                   oldPrice="R$ 79,90"
                   discount="-50%"
+                  link={PRODUCT_LINK}
                 />
               </div>
             </div>
@@ -165,15 +170,22 @@ function OfferCardCompact({
   price,
   oldPrice,
   discount,
+  link,
 }: {
   image: string;
   title: string;
   price: string;
   oldPrice: string;
   discount: string;
+  link: string;
 }) {
   return (
-    <div className="surface-card overflow-hidden rounded-2xl transition-transform hover:-translate-y-1">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="surface-card block overflow-hidden rounded-2xl transition-transform hover:-translate-y-1"
+    >
       <div className="relative aspect-square overflow-hidden bg-hero-bg">
         <img src={image} alt={title} className="h-full w-full object-cover" loading="lazy" width={300} height={300} />
         <span className="absolute left-2 top-2 rounded-md bg-cta px-2 py-0.5 text-xs font-bold text-cta-foreground">
@@ -187,7 +199,7 @@ function OfferCardCompact({
           <span className="text-xs text-hero-muted line-through">{oldPrice}</span>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -334,7 +346,7 @@ function FeaturedOffers() {
                 <span className="mb-1 text-sm text-hero-muted line-through">{p.oldPrice}</span>
               </div>
               <a
-                href={WHATSAPP_LINK}
+                href={PRODUCT_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-cta mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold text-cta-foreground transition-all hover:bg-cta-hover"
