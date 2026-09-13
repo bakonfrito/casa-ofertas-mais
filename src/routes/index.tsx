@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShieldCheck, LogOut, Store, CheckCircle2, Smartphone, Gift, ShoppingCart, Flame, ArrowRight } from "lucide-react";
 
+import logoAsset from "@/assets/logo-ofertas-lar-doce-lar.png.asset.json";
+
 import produtoOrganizadorGavetas from "@/assets/casa-ofertas/produto-organizador-gavetas.jpg";
 import produtoLuminariaLed from "@/assets/casa-ofertas/produto-luminaria-led.jpg";
 import produtoPotesHermeticos from "@/assets/casa-ofertas/produto-potes-hermeticos.jpg";
