@@ -18,13 +18,13 @@ const PRODUCT_LINK = "https://meli.la/1d2LDEy";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Casa Ofertas | Ofertas e Cupons de Acessórios para Casa" },
+      { title: "Ofertas Lar Doce Lar | Ofertas e Cupons de Acessórios para Casa" },
       {
         name: "description",
         content:
-          "Entre no grupo Casa Ofertas e receba os melhores preços e cupons exclusivos de acessórios para casa no Mercado Livre e Shopee. 100% gratuito.",
+          "Entre no grupo Ofertas Lar Doce Lar e receba os melhores preços e cupons exclusivos de acessórios para casa no Mercado Livre e Shopee. 100% gratuito.",
       },
-      { property: "og:title", content: "Casa Ofertas | Ofertas e Cupons de Acessórios para Casa" },
+      { property: "og:title", content: "Ofertas Lar Doce Lar | Ofertas e Cupons de Acessórios para Casa" },
       {
         property: "og:description",
         content:
