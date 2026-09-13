@@ -166,15 +166,22 @@ function OfferCardCompact({
   price,
   oldPrice,
   discount,
+  link,
 }: {
   image: string;
   title: string;
   price: string;
   oldPrice: string;
   discount: string;
+  link: string;
 }) {
   return (
-    <div className="surface-card overflow-hidden rounded-2xl transition-transform hover:-translate-y-1">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="surface-card block overflow-hidden rounded-2xl transition-transform hover:-translate-y-1"
+    >
       <div className="relative aspect-square overflow-hidden bg-hero-bg">
         <img src={image} alt={title} className="h-full w-full object-cover" loading="lazy" width={300} height={300} />
         <span className="absolute left-2 top-2 rounded-md bg-cta px-2 py-0.5 text-xs font-bold text-cta-foreground">
@@ -188,7 +195,7 @@ function OfferCardCompact({
           <span className="text-xs text-hero-muted line-through">{oldPrice}</span>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
