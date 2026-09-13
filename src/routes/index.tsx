@@ -346,7 +346,7 @@ function FeaturedOffers() {
                 <span className="mb-1 text-sm text-hero-muted line-through">{p.oldPrice}</span>
               </div>
               <a
-                href={WHATSAPP_LINK}
+                href={PRODUCT_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-cta mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold text-cta-foreground transition-all hover:bg-cta-hover"
