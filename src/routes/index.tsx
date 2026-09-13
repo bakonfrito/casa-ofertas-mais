@@ -11,6 +11,7 @@ import produtoOrganizadorCloset from "@/assets/casa-ofertas/produto-organizador-
 import produtoUtensiliosCozinha from "@/assets/casa-ofertas/produto-utensilios-cozinha.jpg";
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/BB8fzz59ZKXIOvvy2tIQog?s=cl&p=a&mlu=4&ilr=4";
+const PRODUCT_LINK = "https://meli.la/1d2LDEy";
 
 export const Route = createFileRoute("/")({
   head: () => ({
