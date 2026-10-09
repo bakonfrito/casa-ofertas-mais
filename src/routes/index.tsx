@@ -454,9 +454,8 @@ function Footer() {
           <span>Ofertas Lar Doce Lar</span>
         </a>
         <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-hero-muted">
-          Ofertas Lar Doce Lar é um canal independente de divulgação de ofertas. Não somos afiliados oficiais do Mercado
-          Livre ou da Shopee. Os preços e produtos exibidos são meramente ilustrativos e podem ser alterados a
-          qualquer momento.
+          Ofertas Lar Doce Lar é um canal independente de divulgação de ofertas. Somos afiliados oficiais do Mercado
+          Livre e Shopee.
         </p>
         <div className="mt-6 flex items-center justify-center gap-2 text-sm text-hero-muted">
           <CheckCircle2 className="h-4 w-4 text-success" />
